@@ -19,8 +19,12 @@ Open http://localhost:3000.
 npm run build
 ```
 
-The static site is written to `out/` and deployed on Cloudflare Pages
-(build command `npm run build`, output directory `out`).
+The static site is written to `out/` and served by Cloudflare Workers
+(static assets, config in `wrangler.jsonc`). Deploy with:
+
+```bash
+npm run build && npx wrangler deploy
+```
 
 ## Edit content
 
