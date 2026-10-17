@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Image from "next/image";
 import { AgentTerminal, HeroVideo, LineReveal, Reveal, RotatingWords } from "@/components/motion";
 import {
   UPWORK_URL,
@@ -229,6 +230,20 @@ export default function Home() {
                   <p className="leading-relaxed text-muted">{p.text}</p>
                   <p className="mt-4 font-mono text-xs text-faint">{p.stack.join("  ·  ")}</p>
                 </div>
+                <figure className="md:col-span-2 md:col-start-2">
+                  <div className="overflow-hidden rounded-xl border border-border bg-card">
+                    <Image
+                      src={p.image}
+                      alt={p.imageAlt}
+                      width={1600}
+                      height={1195}
+                      unoptimized
+                      sizes="(min-width: 1280px) 1000px, (min-width: 768px) 75vw, 100vw"
+                      className="h-auto w-full transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    />
+                  </div>
+                  <figcaption className="mt-3 font-mono text-xs text-faint">Interface illustration</figcaption>
+                </figure>
               </article>
             </Reveal>
           ))}

@@ -51,18 +51,24 @@ export const projects = [
     client: "UK-based social media & AI startup",
     text: "Social community MVP with profiles, posts, comments and engagement, plus an AI conversational agent built into messaging. UI/UX through to production.",
     stack: ["React Native", "Expo", "Supabase", "LLM APIs"],
+    image: "/work/social-ai.webp",
+    imageAlt: "Two iPhone screens: a community feed with posts, and a chat with an AI assistant summarising a group",
   },
   {
     title: "Restaurant ordering & delivery app",
     client: "Canadian restaurant franchise",
     text: "iOS ordering app with live driver tracking, push notifications for order status and a secure checkout with payment integration.",
     stack: ["React Native", "Geolocation", "Payments", "Push"],
+    image: "/work/restaurant-delivery.webp",
+    imageAlt: "Two iPhone screens: a restaurant menu with a cart, and live delivery tracking on a map",
   },
   {
     title: "Cross-platform mobile MVP",
     client: "NGS Solution",
     text: "iOS and Android MVP with secure authentication, payments, push notifications and AI features, prepared for store release.",
     stack: ["Expo", "TypeScript", "Supabase", "AI agents"],
+    image: "/work/mobile-mvp.webp",
+    imageAlt: "Two iPhone screens: secure sign-in with Face ID, and a home screen with an AI assistant and payments",
   },
 ];
 
