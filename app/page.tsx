@@ -360,8 +360,10 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="scroll-mt-24 border-t border-border">
+      <section className="border-t border-border">
         <div className="mx-auto max-w-7xl px-5 py-32 sm:px-8 sm:py-44">
+          {/* Anchor sits at the content (not the section's top padding) so "Let's talk" lands with the button in view. */}
+          <span id="contact" aria-hidden className="block scroll-mt-32 sm:scroll-mt-40" />
           <Reveal>
             <p className="mb-10 font-mono text-xs uppercase tracking-[0.2em] text-muted">Have an idea?</p>
             <h2 className="text-[13vw] leading-[0.95] tracking-[-0.04em] sm:text-[8vw] lg:text-[7.5rem]">
